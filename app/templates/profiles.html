@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div>
+    <h3>List of all user profiles</h3>
+    <ol>
+        {% for user in users %}
+            <li>
+               {{ user.username }}, {{ user.userid }}<br>
+             </li>
+        {% endfor %}
+    </ol>
+</div>
+{% endblock %}

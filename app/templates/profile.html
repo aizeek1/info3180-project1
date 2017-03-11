@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div style="float:left">
+    <img src="/static/imgs/{{ img }}" style="width:350px;height:300px;padding-top:20px"/>
+</div>
+<div style="float:left;padding-left:20px">
+    <h1>{{ fname }} {{ lname }}</h1>
+   <p><b>Profile Created On:</b>{{ created }}</p><br>
+    
+    <p ><b>Username:</b> {{ username }}</p>
+    <p><b>User ID:</b> {{ userid }}</p>
+    <p><b>Gender:</b> {{ gender }}</p>
+    <p><b>Age:</b> {{ age }}</p>
+    <br>
+    <p>{{ biography }}</p>
+</div>
+{% endblock %}
